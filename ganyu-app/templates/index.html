@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganyu Appreciation | Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <span>Ganyu</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="fade-in">Ganyu</h1>
+                <h2 class="slide-up">The Graceful Secretary of Liyue Qixing</h2>
+                <p class="fade-in">Half human, half qilin. As the secretary of the Liyue Qixing, she always takes her work seriously and efficiently.</p>
+                <br>
+                <p class="fade-in">Created by her loving husband: Drixxyy</p>
+                <a href="/gallery" class="btn slide-up">View Gallery</a>
+            </div>
+            <div class="hero-image fade-in">
+                <img src="{{ url_for('static', filename='images/ganyu_portrait.png') }}" alt="Ganyu Portrait">
+            </div>
+        </section>
+
+        <section class="character-info">
+            <div class="info-card slide-up">
+                <div class="info-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3>Character</h3>
+                <p>Ganyu is a half-qilin Adeptus who serves as the secretary for the Liyue Qixing. She has lived for thousands of years.</p>
+            </div>
+            <div class="info-card slide-up">
+                <div class="info-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Vision</h3>
+                <p>Cryo - Her unique charged attack "Frostflake Arrow" deals devastating AoE Cryo damage.</p>
+            </div>
+            <div class="info-card slide-up">
+                <div class="info-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3>Personality</h3>
+                <p>Ganyu is gentle, reserved and diligent. She struggles with her half-human, half-adeptus identity.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Ganyu Appreciation Page by HNDRX.ORG | its from PH ofc | Fan-made content by her Husband | Not affiliated with miHoYo/HoYoverse</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
